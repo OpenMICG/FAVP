@@ -2,8 +2,8 @@
 
 ## Setup & Data Preparation
 
-'''conda create -n FAVP python=3.9
-conda activate FAVP'''
+'conda create -n FAVP python=3.9'
+'conda activate FAVP'
 
 2.Data Preparation
 ============
