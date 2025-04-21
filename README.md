@@ -1,13 +1,13 @@
 # Fine-grained Adaptive Visual Prompt for Generative Medical Visual Question Answering
 
 # Setup & Data Preparation
-========
+
 ## Prepare the environment
 
-    git clone https://github.com/Vision-CAIR/MiniGPT-4.git \<br>
-    cd MiniGPT-4 \<br>
+    git clone https://github.com/OpenMICG/FAVP.git \<br>
+    cd FAVP \<br>
     conda env create -f environment.yml \<br>
-    conda activate minigptv
+    conda activate FAVP
 
 ## Data Preparation
 ROCO-Dataset: Download from [here](https://www.kaggle.com/datasets/virajbagal/roco-dataset)  
