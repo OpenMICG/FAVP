@@ -1,12 +1,13 @@
 # Fine-grained Adaptive Visual Prompt for Generative Medical Visual Question Answering
+============
 
 ## Setup & Data Preparation
+-----
+    conda create -n FAVP python=3.9 \<br> 
+    conda activate FAVP
 
-'conda create -n FAVP python=3.9'
-'conda activate FAVP'
+Data Preparation
 
-2.Data Preparation
-============
 ROCO-Dataset: Download from [here](https://www.kaggle.com/datasets/virajbagal/roco-dataset)  
 PMC-VQA: Download from [here](https://huggingface.co/datasets/xmcmic/PMC-VQA)  
 SLAKE: Download from [here](https://huggingface.co/datasets/BoKelvin/SLAKE)  
