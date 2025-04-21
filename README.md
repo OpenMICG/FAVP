@@ -1,6 +1,6 @@
 # Fine-grained Adaptive Visual Prompt for Generative Medical Visual Question Answering
 
-##Setup & Data Preparation
+## Setup & Data Preparation
 
 conda create -n FAVP python=3.9
 conda activate FAVP
