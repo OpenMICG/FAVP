@@ -17,5 +17,12 @@ VQA-RAD: Download from [here](https://huggingface.co/datasets/flaviagiammarino/v
 DME：Download from [here](https://zenodo.org/records/6784358)  
 
 
+## Pretraining
+### Stage1
+
+### Stage2
+
+## Finetuning
+
 code coming soon...
 
