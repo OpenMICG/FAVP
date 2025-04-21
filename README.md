@@ -4,9 +4,9 @@
 
 ## Prepare the environment
 
-    git clone https://github.com/OpenMICG/FAVP.git \<br>
-    cd FAVP \<br>
-    conda env create -f environment.yml \<br>
+    git clone https://github.com/OpenMICG/FAVP.git
+    cd FAVP
+    conda env create -f environment.yml
     conda activate FAVP
 
 ## Data Preparation
