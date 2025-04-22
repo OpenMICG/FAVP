@@ -30,5 +30,11 @@ DME：Download from [here](https://zenodo.org/records/6784358)
     
 ## Finetuning
 
+    cd run_scripts
+    # SLAKE
+    sh train_slake.yaml
+    # VQA-RAD
+    sh train_rad.yaml
+    
 code coming soon...
 
