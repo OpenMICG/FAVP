@@ -20,8 +20,14 @@ DME：Download from [here](https://zenodo.org/records/6784358)
 ## Pretraining
 ### Stage1
 
+    cd run_scripts
+    sh stage1_pretrain.yaml
+
 ### Stage2
 
+    cd run_scripts
+    sh stage2_pretrain.yaml
+    
 ## Finetuning
 
 code coming soon...
