@@ -1,0 +1,22 @@
+datasets:
+  dme_vqa:
+    data_type: images # [images|videos|features]
+    build_info:
+      annotations:
+        train:
+          url:
+              - hhttps://huggingface.co/datasets/BoKelvin/SLAKE/blob/main/train.json
+          storage:
+              - /data/tongzixuan/dataset/dme_vqa/qa/trainqa.json
+        val:
+          url:
+              - https://huggingface.co/datasets/BoKelvin/SLAKE/blob/main/validation.json
+          storage:
+              - /data/tongzixuan/dataset/dme_vqa/qa/valqa.json
+        test:
+          url:
+              - https://huggingface.co/datasets/BoKelvin/SLAKE/blob/main/test.json
+          storage:
+              - /data/tongzixuan/dataset/dme_vqa/qa/testqa.json
+      images:
+          storage: /data/tongzixuan/dataset/dme_vqa

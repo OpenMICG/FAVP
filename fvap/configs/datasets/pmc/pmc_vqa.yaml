@@ -1,0 +1,11 @@
+datasets:
+  pmc_vqa:
+    data_type: images # [images|videos|features]
+    build_info:
+      annotations:
+        train:
+          url: https://storage.googleapis.com/sfr-vision-language-research/datasets/coco_karpathy_train.json
+          storage: /data/tongzixuan/dataset/pmc/pmv-vqa/train.json
+      images:
+        storage: /data/luwangwen/data/PMC/PMC_VQA/images
+
