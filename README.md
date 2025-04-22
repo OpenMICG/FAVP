@@ -25,6 +25,7 @@ The weights of the first stage are saved in output_dir of [train_configs/stage1_
     sh stage1_pretrain.yaml
 
 ### Stage2
+The weights of the second stage are saved in output_dir of [train_configs/stage2_pretrain.yaml](train_configs/stage2_pretrain.yaml), and you can change it to your own directory
 
     cd run_scripts
     sh stage2_pretrain.yaml
