@@ -5,14 +5,14 @@ import torch
 from torch.cuda.amp import autocast as autocast
 import torch.nn as nn
 
-from minigpt4.common.registry import registry
-from minigpt4.models.base_model import BaseModel
+from favp.common.registry import registry
+from favp.models.base_model import BaseModel
 from transformers import StoppingCriteria, StoppingCriteriaList
 
-from minigpt4.conversation.conversation import StoppingCriteriaSub
+# from favp.conversation.conversation import StoppingCriteriaSub
 
 
-class MiniGPTBase(BaseModel):
+class FAVPBase(BaseModel):
     """
     Base class for MiniGPT-4 and MiniGPT-v2
     """
@@ -425,3 +425,17 @@ class MiniGPTBase(BaseModel):
                 all_losses[i, num_cand[i]:] = 9999
         output_class_ranks = torch.argsort(all_losses, dim=-1)
         return output_class_ranks.tolist()
+
+
+class StoppingCriteriaSub(StoppingCriteria):
+
+    def __init__(self, stops=[], encounters=1):
+        super().__init__()
+        self.stops = stops
+
+    def __call__(self, input_ids: torch.LongTensor, scores: torch.FloatTensor):
+        for stop in self.stops:
+            if torch.all(input_ids[:, -len(stop):] == stop).item():
+                return True
+
+        return False

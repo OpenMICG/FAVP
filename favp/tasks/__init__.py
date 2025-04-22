@@ -5,10 +5,10 @@
  For full license text, see the LICENSE_Lavis file in the repo root or https://opensource.org/licenses/BSD-3-Clause
 """
 
-from minigpt4.common.registry import registry
-from minigpt4.tasks.base_task import BaseTask
-from minigpt4.tasks.image_text_pretrain import ImageTextPretrainTask
-from minigpt4.tasks.vqa import VQATask
+from favp.common.registry import registry
+from favp.tasks.base_task import BaseTask
+from favp.tasks.image_text_pretrain import ImageTextPretrainTask
+from favp.tasks.vqa import VQATask
 
 
 def setup_task(cfg):

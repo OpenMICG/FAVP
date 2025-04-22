@@ -9,11 +9,11 @@ import os
 import logging
 import warnings
 
-from minigpt4.common.registry import registry
-from minigpt4.datasets.builders.base_dataset_builder import BaseDatasetBuilder
-from minigpt4.datasets.datasets.slake_vqa import SLAKEVQADataset, SLAKEVQAEvalDataset
-from minigpt4.datasets.datasets.dmevqa_dataset import DMEVQADataset,DMEVQAEvalDataset
-from minigpt4.datasets.datasets.vqa_rad_dataset import VQARADEvalDataset,VQARADDataset
+from favp.common.registry import registry
+from favp.datasets.builders.base_dataset_builder import BaseDatasetBuilder
+from favp.datasets.datasets.slake_vqa import SLAKEVQADataset, SLAKEVQAEvalDataset
+from favp.datasets.datasets.dmevqa_dataset import DMEVQADataset,DMEVQAEvalDataset
+from favp.datasets.datasets.vqa_rad_dataset import VQARADEvalDataset,VQARADDataset
 
 
 @registry.register_builder("slake")

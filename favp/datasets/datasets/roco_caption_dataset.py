@@ -3,7 +3,7 @@ from collections import OrderedDict
 import cv2
 import torch
 
-from minigpt4.datasets.datasets.base_dataset import BaseDataset
+from favp.datasets.datasets.base_dataset import BaseDataset
 from PIL import Image
 import random
 

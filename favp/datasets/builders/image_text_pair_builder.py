@@ -2,8 +2,8 @@ import os
 import logging
 import warnings
 
-from minigpt4.common.registry import registry
-from minigpt4.datasets.builders.base_dataset_builder import BaseDatasetBuilder
+from favp.common.registry import registry
+from favp.datasets.builders.base_dataset_builder import BaseDatasetBuilder
 # from minigpt4.datasets.datasets.laion_dataset import LaionDataset
 # from minigpt4.datasets.datasets.cc_sbu_dataset import CCSBUDataset, CCSBUAlignDataset
 # from minigpt4.datasets.datasets.text_caps import TextCapDataset
@@ -19,8 +19,8 @@ from minigpt4.datasets.builders.base_dataset_builder import BaseDatasetBuilder
 # from minigpt4.datasets.datasets.ocrvqa_dataset import OCRVQADataset
 # from minigpt4.datasets.datasets.coco_caption import COCOCapDataset
 # from minigpt4.datasets.datasets.pmc_caption import PMCCaptionDataset
-from minigpt4.datasets.datasets.pmc_vqa_dataset import PMCVQADataset
-from minigpt4.datasets.datasets.roco_caption_dataset import RocoCaptionDataset
+from favp.datasets.datasets.pmc_vqa_dataset import PMCVQADataset
+from favp.datasets.datasets.roco_caption_dataset import RocoCaptionDataset
 
 
 # @registry.register_builder("multitask_conversation")

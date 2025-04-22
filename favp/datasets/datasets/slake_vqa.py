@@ -4,8 +4,8 @@ import random
 
 from PIL import Image
 import torch
-from minigpt4.datasets.datasets.vqa_datasets import VQADataset, VQAEvalDataset
-from minigpt4.datasets.datasets.base_dataset import BaseDataset
+from favp.datasets.datasets.vqa_datasets import VQADataset, VQAEvalDataset
+from favp.datasets.datasets.base_dataset import BaseDataset
 
 from collections import OrderedDict
 import cv2

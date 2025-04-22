@@ -1,5 +1,5 @@
 model:
-  arch: minigpt4
+  arch: favp
   model_type: pretrain_vicuna0
   end_sym: "###"
   prompt_template: '###Human: {} ###Assistant: '
@@ -9,6 +9,8 @@ model:
   q_former_model: "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xxl.pth"
   vit_model: "eva_clip_g"
   has_qformer: True
+  vit_lora_r: 4
+  vit_lora_alpha: 8
 
 datasets:
   roco_caption:
@@ -36,7 +38,7 @@ run:
   warmup_steps: 5000
 
   seed: 42
-  output_dir: ""
+  output_dir: "data/tongzixuan/outputs/FAVP/stage1"
 
   amp: True
   resume_ckpt_path: null
@@ -48,6 +50,3 @@ run:
   world_size: 1
   dist_url: "env://"
   distributed: True
-
-  wandb_log: False
-  job_name: minigpt4_pretrain

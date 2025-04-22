@@ -15,7 +15,7 @@ import torch.utils.checkpoint as checkpoint
 from timm.models.layers import drop_path, to_2tuple, trunc_normal_
 from timm.models.registry import register_model
 from transformers import PretrainedConfig
-from minigpt4.common.dist_utils import download_cached_file
+from favp.common.dist_utils import download_cached_file
 
 def _cfg(url='', **kwargs):
     return {

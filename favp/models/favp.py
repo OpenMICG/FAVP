@@ -7,28 +7,23 @@ from torch.cuda.amp import autocast as autocast
 import torch.nn as nn
 
 import numpy as np
-from minigpt4.common.registry import registry
-from minigpt4.models.base_model import disabled_train
-from minigpt4.models.minigpt_base import MiniGPTBase
-from minigpt4.models.Qformer import BertConfig, BertLMHeadModel
+from favp.common.registry import registry
+from favp.models.base_model import disabled_train
+from favp.models.favp_base import FAVPBase
+from favp.models.Qformer import BertConfig, BertLMHeadModel
 
-
-from minigpt4.segmed.utils.transforms import ResizeLongestSide
+from favp.segmed.utils.transforms import ResizeLongestSide
 from timm.data.constants import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
-from minigpt4.models.fine_grained_visual_prompt import FGVP_ENSEMBLE
-from minigpt4.segmed.build_sam import sam_model_registry
-from minigpt4.segmed.automatic_mask_generator import SamAutomaticMaskGenerator
+from favp.models.fine_grained_visual_prompt import FGVP_ENSEMBLE
+from favp.segmed.build_sam import sam_model_registry
+from favp.segmed.automatic_mask_generator import SamAutomaticMaskGenerator
 
 
-@registry.register_model("minigpt4")
-class MiniGPT4(MiniGPTBase):
-    """
-    MiniGPT-4 model
-    """
+@registry.register_model("favp")
+class FAVP(FAVPBase):
 
     PRETRAINED_MODEL_CONFIG_DICT = {
-        "pretrain_vicuna0": "configs/models/minigpt4_vicuna0.yaml",
-        "pretrain_llama2": "configs/models/minigpt4_llama2.yaml",
+        "pretrain_vicuna0": "configs/models/vicuna0.yaml",
     }
 
     def __init__(

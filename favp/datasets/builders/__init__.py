@@ -5,13 +5,13 @@
  For full license text, see the LICENSE_Lavis file in the repo root or https://opensource.org/licenses/BSD-3-Clause
 """
 
-from minigpt4.datasets.builders.base_dataset_builder import load_dataset_config
-from minigpt4.datasets.builders.image_text_pair_builder import (
+from favp.datasets.builders.base_dataset_builder import load_dataset_config
+from favp.datasets.builders.image_text_pair_builder import (
     PMCVQABuilder,
     RocoCapBuilder,
 )
-from minigpt4.datasets.builders.vqa_builder import SLAKEVQABuilder, DMEVQABuilder, VQARADBuilder
-from minigpt4.common.registry import registry
+from favp.datasets.builders.vqa_builder import SLAKEVQABuilder, DMEVQABuilder, VQARADBuilder
+from favp.common.registry import registry
 
 __all__ = [
     "PMCVQABuilder",

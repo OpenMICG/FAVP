@@ -7,7 +7,7 @@
 import numpy as np
 import torch
 
-from minigpt4.segmed.modeling import Sam
+from favp.segmed.modeling import Sam
 
 from typing import Optional, Tuple
 

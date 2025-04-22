@@ -9,20 +9,18 @@ import logging
 import torch
 from omegaconf import OmegaConf
 
-from minigpt4.common.registry import registry
-from minigpt4.models.base_model import BaseModel
-from minigpt4.models.minigpt_base import MiniGPTBase
-from minigpt4.models.minigpt4 import MiniGPT4
-from minigpt4.models.minigpt_v2 import MiniGPTv2
-from minigpt4.processors.base_processor import BaseProcessor
+from favp.common.registry import registry
+from favp.models.base_model import BaseModel
+from favp.models.favp_base import FAVPBase
+from favp.models.favp import FAVP
+from favp.processors.base_processor import BaseProcessor
 
 
 __all__ = [
     "load_model",
     "BaseModel",
-    "MiniGPTBase",
-    "MiniGPT4",
-    "MiniGPTv2"
+    "FAVPBase",
+    "FAVP",
 ]
 
 
@@ -31,7 +29,7 @@ def load_model(name, model_type, is_eval=False, device="cpu", checkpoint=None):
     Load supported models.
 
     To list all available models and types in registry:
-    >>> from minigpt4.models import model_zoo
+    >>> from favp.models import model_zoo
     >>> print(model_zoo)
 
     Args:
@@ -117,7 +115,7 @@ def load_model_and_preprocess(name, model_type, is_eval=False, device="cpu"):
     Load model and its related preprocessors.
 
     List all available models and types in registry:
-    >>> from minigpt4.models import model_zoo
+    >>> from favp.models import model_zoo
     >>> print(model_zoo)
 
     Args:
@@ -164,7 +162,7 @@ class ModelZoo:
     """
     A utility class to create string representation of available model architectures and types.
 
-    >>> from minigpt4.models import model_zoo
+    >>> from favp.models import model_zoo
     >>> # list all available models
     >>> print(model_zoo)
     >>> # show total number of models

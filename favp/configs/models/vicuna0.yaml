@@ -1,5 +1,5 @@
 model:
-  arch: minigpt4
+  arch: favp
 
   # vit encoder
   image_size: 224
@@ -15,7 +15,7 @@ model:
   # generation configs
   prompt: ""
 
-  llama_model: ""
+  llama_model: "/data/tongzixuan/checkpoints/vicuna/v0_7b"
 
 preprocess:
     vis_processor:

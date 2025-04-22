@@ -4,7 +4,7 @@ import random
 
 from PIL import Image
 
-from minigpt4.datasets.datasets.vqa_datasets import VQADataset
+from favp.datasets.datasets.vqa_datasets import VQADataset
 
 from collections import OrderedDict
 

@@ -7,8 +7,8 @@ import numpy as np
 import cv2
 import torchvision.utils as vutils
 import torchvision.transforms as transforms
-from minigpt4.datasets.datasets.vqa_datasets import VQADataset, VQAEvalDataset
-from minigpt4.datasets.datasets.base_dataset import BaseDataset
+from favp.datasets.datasets.vqa_datasets import VQADataset, VQAEvalDataset
+from favp.datasets.datasets.base_dataset import BaseDataset
 
 from collections import OrderedDict
 

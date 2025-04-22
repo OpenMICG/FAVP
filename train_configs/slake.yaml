@@ -1,5 +1,5 @@
 model:
-  arch: minigpt4
+  arch: favp
   model_type: pretrain_vicuna0
   max_txt_len: 160
   end_sym: "###"
@@ -87,6 +87,3 @@ run:
   world_size: 1
   dist_url: "env://"
   distributed: True
-
-  wandb_log: False
-  job_name: minigpt4_slake
