@@ -19,7 +19,7 @@ DME：Download from [here](https://zenodo.org/records/6784358)
 
 ## Pretraining
 ### Stage1
-The weights of the first stage are saved in output_dir of [train_configsstage1_pretrain.yaml](train_configs/stage1_pretrain.yaml), and you can change it to your own directory
+The weights of the first stage are saved in output_dir of [train_configs/stage1_pretrain.yaml](train_configs/stage1_pretrain.yaml), and you can change it to your own directory
 
     cd run_scripts
     sh stage1_pretrain.yaml
