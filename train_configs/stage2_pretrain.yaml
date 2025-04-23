@@ -6,7 +6,7 @@ model:
   end_sym: "###"
   prompt_path: ""
   prompt_template: '###Human: {} ###Assistant: '
-  ckpt: "/data/tongzixuan/outputs/FAVP/stage1/20250422132/checkpoint_0.pth"
+  ckpt: ""
   freeze_vit: True
   freeze_qformer: False
   q_former_model: "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xxl.pth"
@@ -34,12 +34,12 @@ run:
   warmup_lr: 1e-6
 
   weight_decay: 0.05
-  max_epoch: 1
+  max_epoch: 10
   num_workers: 4
   warmup_steps: 200
 
   seed: 42
-  output_dir: "/data/tongzixuan/outputs/FAVP/stage2"
+  output_dir: ""
 
   amp: True
   resume_ckpt_path: null

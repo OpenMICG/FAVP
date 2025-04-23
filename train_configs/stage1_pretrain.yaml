@@ -38,7 +38,7 @@ run:
   warmup_steps: 5000
 
   seed: 42
-  output_dir: "data/tongzixuan/outputs/FAVP/stage1"
+  output_dir: ""
 
   amp: True
   resume_ckpt_path: null
