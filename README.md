@@ -16,8 +16,7 @@ SLAKE: Download from [here](https://huggingface.co/datasets/BoKelvin/SLAKE)
 VQA-RAD: Download from [here](https://huggingface.co/datasets/flaviagiammarino/vqa-rad)  
 DME：Download from [here](https://zenodo.org/records/6784358)  
 
-Vicuna V0 7B: Download from [here](https://huggingface.co/Vision-CAIR/vicuna-7b/tree/main)
-Then, set the variable llama_model in the model config file to the LLM path [here](favp/configs/models/vicuna0.yaml)
+Vicuna V0 7B: Download from [here](https://huggingface.co/Vision-CAIR/vicuna-7b/tree/main). Then, set the variable llama_model in the model config file to the LLM path [here](favp/configs/models/vicuna0.yaml)
 ## Pretraining
 ### Stage1
 The weights of the first stage are saved in output_dir of [train_configs/stage1_pretrain.yaml](train_configs/stage1_pretrain.yaml), and you can change it to your own directory
