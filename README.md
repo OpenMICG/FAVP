@@ -38,4 +38,7 @@ The weights of the second stage are saved in output_dir of [train_configs/stage2
     # VQA-RAD
     sh train_rad.yaml
 
+### Acknowledgement
+We would like to thank [Minigpt-V](https://github.com/Vision-CAIR/MiniGPT-4) and [SAM-Med2D](https://github.com/OpenGVLab/SAM-Med2D) for their valuable support and contributions.
+
 
