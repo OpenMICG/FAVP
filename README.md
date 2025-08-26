@@ -38,7 +38,7 @@ The weights of the second stage are saved in output_dir of [train_configs/stage2
     # VQA-RAD
     sh train_rad.yaml
     
-If you don't want to go through the above training process, you can download checkpoint from [here](https://huggingface.co/Tzx1123/FAVP/upload/main)
+If you don't want to go through the above training process, you can download checkpoint from [huggingface]([https://huggingface.co/Tzx1123/FAVP/upload/main](https://huggingface.co/Tzx1123/FAVP/tree/main))
 
 ## Test
     cd run_scripts
