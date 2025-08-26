@@ -15,7 +15,7 @@ model:
   # generation configs
   prompt: ""
 
-  llama_model: "/data3/tongzixuan/checkpoints/vicuna/7b"
+  llama_model: ""
 
 preprocess:
     vis_processor:

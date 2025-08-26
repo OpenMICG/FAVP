@@ -6,8 +6,8 @@ model:
   prompt_path: ""
   prompt_template: '###Human: {} ###Assistant: '
   chat_template: False
-  q_former_model: "/data3/tongzixuan/outputs/minigpt4/stage2/lora4/checkpoint_9.pth"
-  ckpt: "/data3/tongzixuan/outputs/minigpt4/stage2/lora4/checkpoint_9.pth"
+  q_former_model: ""
+  ckpt: ""
   freeze_vit: True
   freeze_qformer: False
   setting: "lora"
@@ -72,7 +72,7 @@ run:
   warmup_steps: 200
 
   seed: 42
-  output_dir: "/data3/tongzixuan/outputs/minigpt4-vitlora/vqa_rad/circle_onlystage3_3times"
+  output_dir: ""
 
   amp: True
   resume_ckpt_path: null

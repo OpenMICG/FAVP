@@ -72,7 +72,7 @@ run:
   warmup_steps: 200
 
   seed: 42
-  output_dir: "/data3/tongzixuan/outputs/minigpt4-vitlora/vqa_rad/test_for_github"
+  output_dir: ""
 
   amp: True
   resume_ckpt_path: null

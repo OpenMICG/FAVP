@@ -35,8 +35,7 @@ run:
   num_workers: 4
   warmup_steps: 5000
 
-  seed: 42
-  output_dir: "/data/tongzixuan/outputs/minigpt4-vitlora/stage1"
+  seed: 42/data/tongzixuan/outputs/minigpt4-vitlora/stage1"
 
   amp: True
   resume_ckpt_path: null

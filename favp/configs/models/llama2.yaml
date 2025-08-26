@@ -12,7 +12,7 @@ model:
   # generation configs
   prompt: ""
 
-  llama_model: "/data3/tongzixuan/checkpoints/llama2/llama2_7b"
+  llama_model: ""
 
 preprocess:
     vis_processor:
