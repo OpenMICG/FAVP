@@ -6,8 +6,8 @@ datasets:
         train:
           url: https://storage.googleapis.com/sfr-vision-language-research/datasets/coco_karpathy_train.json
           md5: aa31ac474cf6250ebb81d18348a07ed8
-          storage: /data3/tongzixuan/dataset/PMC/PMC_OA/PMC_OA_ALL.json
+          storage: 
       images:
-        storage: /data3/tongzixuan/dataset/PMC/PMC_OA/caption_T060_filtered_top4_sep_v0_subfigures
+        storage:
 
 

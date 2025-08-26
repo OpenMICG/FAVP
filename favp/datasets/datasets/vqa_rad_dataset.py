@@ -29,7 +29,6 @@ class VQARADDataset(BaseDataset, __DisplMixin):
         super().__init__(vis_processor=vis_processor, text_processor=text_processor, vis_root=vis_root,ann_paths=ann_paths )
 
         self.instruction_pool = [
-            # "[vqa] {}",
             "[vqa] Based on the image, respond to this question with a short answer: {}"
         ]
 
@@ -61,7 +60,6 @@ class VQARADDataset(BaseDataset, __DisplMixin):
             "instruction_input": instruction,
             "answer": data["answer"],
             "image_path": data['image_path']
-            # "image": data["image"]
         }
 
 
@@ -74,8 +72,6 @@ class VQARADEvalDataset(BaseDataset, __DisplMixin):
             "[vqa] Based on the image, respond to this question with a short answer: {}"
         ]
         self.vis_root = vis_root
-        # for ann_path in ann_paths:
-        #     self.annotation.append(json.load(open(ann_path)))
         self.ques_file = self.annotation
         self.anno_file = self.annotation
 
@@ -83,8 +79,6 @@ class VQARADEvalDataset(BaseDataset, __DisplMixin):
         ann = self.annotation[index]
 
         image_path = os.path.join(self.vis_root, ann["image_name"])
-        image = Image.open(image_path).convert("RGB")
-        image = self.vis_processor(image)
 
         question = self.text_processor(ann["question"])
         instruction = random.choice(self.instruction_pool).format(question)
@@ -95,5 +89,4 @@ class VQARADEvalDataset(BaseDataset, __DisplMixin):
             "question": question,
             "question_id": ann["qid"],
             "instruction_input": instruction,
-            # "image": image
         }
