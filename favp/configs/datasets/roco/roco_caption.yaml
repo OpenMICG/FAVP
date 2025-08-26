@@ -1,0 +1,12 @@
+datasets:
+  roco_caption:
+    data_type: images # [images|videos|features]
+    build_info:
+      annotations:
+        train:
+          url:
+            - https://storage.googleapis.com/sfr-vision-language-research/datasets/coco_karpathy_train.json
+          storage:
+            - /data/luwangwen/data/ROCO/roco_train.json
+      images:
+        storage: /data/luwangwen/data/ROCO/train/radiology/images

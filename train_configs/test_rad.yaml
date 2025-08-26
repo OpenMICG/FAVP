@@ -1,0 +1,91 @@
+model:
+  arch: favp
+  model_type: pretrain_vicuna0
+  max_txt_len: 160
+  end_sym: "###"
+  prompt_path: ""
+  prompt_template: '###Human: {} ###Assistant: '
+  chat_template: False
+  q_former_model: "/data3/tongzixuan/outputs/minigpt4-vitlora/vqa_rad/circle_4/20240724092_sota/checkpoint_best.pth"
+  ckpt: "/data3/tongzixuan/outputs/minigpt4-vitlora/vqa_rad/circle_4/20240724092_sota/checkpoint_best.pth"
+  freeze_vit: True
+  freeze_qformer: False
+  setting: "lora"
+  lora_r: 8
+  lora_alpha: 16
+  vit_model: "eva_clip_g"
+
+  # SamMed
+  has_sam: True
+  points_per_side: 50
+  points_per_batch: 256
+  pred_iou_thresh: 0.8
+  stability_score_thresh: 0.93
+  stability_score_offset: 0.7
+  box_nms_thresh: 0.5
+  crop_n_layers: 0
+  crop_nms_thresh: 0.7
+  crop_overlap_ratio: 512 / 1500
+  crop_n_points_downscale_factor: 2
+  point_grids: None
+  min_mask_region_area: 400
+  output_mode: 'binary_mask'
+  prompt: 'circle'
+
+  # fgvp
+  color_line: 'red'
+  thickness: 2
+  color_mask: 'green'
+  alpha: 0.5
+  vit_processing: 'resize'
+  vit_image_size: 224
+  contour_scale: 1.0
+  blur_std_dev: 100
+
+datasets:
+  vqa_rad:
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 224
+      eval:
+        name: "blip2_image_eval"
+        image_size: 224
+    text_processor:
+      train:
+        name: "blip_caption"
+      eval:
+        name: "blip_caption"
+
+run:
+  task: vqa
+  # optimizer
+  lr_sched: "linear_warmup_cosine_lr"
+  init_lr: 3e-5
+  min_lr: 1e-5
+  warmup_lr: 1e-6
+
+  weight_decay: 0.05
+  max_epoch: 1
+  num_workers: 4
+  warmup_steps: 200
+
+  seed: 42
+  output_dir: "/data3/tongzixuan/outputs/minigpt4-vitlora/vqa_rad/test_for_github"
+
+  amp: True
+  resume_ckpt_path: null
+
+  evaluate: True
+#  train_splits: ["train"]
+#  valid_splits: ["val"]
+  test_splits: ["test"]
+
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True
+
+  wandb_log: False
+  job_name: favp_rad
