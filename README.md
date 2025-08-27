@@ -30,7 +30,7 @@ The weights of the second stage are saved in output_dir of [train_configs/stage2
     cd run_scripts
     sh stage2_pretrain.yaml
     
-### Finetuning
+## Finetuning
 
     cd run_scripts
     # SLAKE
@@ -40,7 +40,7 @@ The weights of the second stage are saved in output_dir of [train_configs/stage2
     
 If you don't want to go through the above training process, you can download VQA-RAD checkpoint from [huggingface](https://huggingface.co/Tzx1123/FAVP/tree/main)
 
-### Test
+## Test
     cd run_scripts
     # VQA-RAD
     sh test_rad.yaml
