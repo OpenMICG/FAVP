@@ -30,7 +30,7 @@ The weights of the second stage are saved in output_dir of [train_configs/stage2
     cd run_scripts
     sh stage2_pretrain.yaml
     
-## Finetuning
+### Finetuning
 
     cd run_scripts
     # SLAKE
@@ -40,15 +40,15 @@ The weights of the second stage are saved in output_dir of [train_configs/stage2
     
 If you don't want to go through the above training process, you can download VQA-RAD checkpoint from [huggingface](https://huggingface.co/Tzx1123/FAVP/tree/main)
 
-## Test
+### Test
     cd run_scripts
     # VQA-RAD
     sh test_rad.yaml
 
-### Acknowledgement
+## Acknowledgement
 The implementation of FAVP relies on [Minigpt-V](https://github.com/Vision-CAIR/MiniGPT-4) and [SAM-Med2D](https://github.com/OpenGVLab/SAM-Med2D). We thank the original authors for their work and open source code.
 
-### Citation
+## Citation
 If you find FAVP useful for your your research and applications, please cite using this BibTeX:
 
     @inproceedings{yu2025fine,
