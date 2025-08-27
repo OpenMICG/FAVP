@@ -48,4 +48,5 @@ If you don't want to go through the above training process, you can download VQA
 ### Acknowledgement
 The implementation of FAVP relies on [Minigpt-V](https://github.com/Vision-CAIR/MiniGPT-4) and [SAM-Med2D](https://github.com/OpenGVLab/SAM-Med2D). We thank the original authors for their work and open source code.
 
-
+### Citation
+If you find FAVP useful for your your research and applications, please cite using this BibTeX:
