@@ -50,12 +50,13 @@ The implementation of FAVP relies on [Minigpt-V](https://github.com/Vision-CAIR/
 
 ### Citation
 If you find FAVP useful for your your research and applications, please cite using this BibTeX:
+
     @inproceedings{yu2025fine,
-  title={Fine-grained Adaptive Visual Prompt for Generative Medical Visual Question Answering},
-  author={Yu, Ting and Tong, Zixuan and Yu, Jun and Zhang, Ke},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  volume={39},
-  number={9},
-  pages={9662--9670},
-  year={2025}
-}
+      title={Fine-grained Adaptive Visual Prompt for Generative Medical Visual Question Answering},
+      author={Yu, Ting and Tong, Zixuan and Yu, Jun and Zhang, Ke},
+      booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+      volume={39},
+      number={9},
+      pages={9662--9670},
+      year={2025}
+    }
