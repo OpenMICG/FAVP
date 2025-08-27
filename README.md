@@ -7,7 +7,7 @@
     git clone https://github.com/OpenMICG/FAVP.git
     cd FAVP
     conda env create -f environment.yml
-    conda activate FAVP
+    conda activate favp
 
 ### Data and Model Preparation
 ROCO-Dataset: Download from [here](https://www.kaggle.com/datasets/virajbagal/roco-dataset)  
@@ -45,7 +45,18 @@ If you don't want to go through the above training process, you can download VQA
     # VQA-RAD
     sh test_rad.yaml
 
-### Acknowledgement
+## Acknowledgement
 The implementation of FAVP relies on [Minigpt-V](https://github.com/Vision-CAIR/MiniGPT-4) and [SAM-Med2D](https://github.com/OpenGVLab/SAM-Med2D). We thank the original authors for their work and open source code.
 
+## Citation
+If you find FAVP useful for your your research and applications, please cite using this BibTeX:
 
+    @inproceedings{yu2025fine,
+      title={Fine-grained Adaptive Visual Prompt for Generative Medical Visual Question Answering},
+      author={Yu, Ting and Tong, Zixuan and Yu, Jun and Zhang, Ke},
+      booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+      volume={39},
+      number={9},
+      pages={9662--9670},
+      year={2025}
+    }
