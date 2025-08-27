@@ -7,7 +7,7 @@
     git clone https://github.com/OpenMICG/FAVP.git
     cd FAVP
     conda env create -f environment.yml
-    conda activate FAVP
+    conda activate favp
 
 ### Data and Model Preparation
 ROCO-Dataset: Download from [here](https://www.kaggle.com/datasets/virajbagal/roco-dataset)  
