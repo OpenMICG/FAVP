@@ -9,15 +9,18 @@
     conda env create -f environment.yml
     conda activate favp
 
-### Data and Model Preparation
+### Data Preparation
 ROCO-Dataset: Download from [here](https://www.kaggle.com/datasets/virajbagal/roco-dataset)  
 PMC-VQA: Download from [here](https://huggingface.co/datasets/xmcmic/PMC-VQA)  
 SLAKE: Download from [here](https://huggingface.co/datasets/BoKelvin/SLAKE)  
 VQA-RAD: Download from [here](https://huggingface.co/datasets/flaviagiammarino/vqa-rad)  
 DME：Download from [here](https://zenodo.org/records/6784358)  
 
+### Model Preparation
 Vicuna V0 7B: Download from [here](https://huggingface.co/Vision-CAIR/vicuna-7b/tree/main). Then, set the variable llama_model in the model config file to the LLM path [here](favp/configs/models/vicuna0.yaml)
+
 ## Pretraining
+
 ### Stage1
 The weights of the first stage are saved in output_dir of [train_configs/stage1_pretrain.yaml](train_configs/stage1_pretrain.yaml), and you can change it to your own directory
 
